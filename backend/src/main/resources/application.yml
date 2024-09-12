@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: backend
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    password: ''
+    username: root
+    url: jdbc:mysql://localhost:3306/ziosk2?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Seoul
+    jpa:
+      hibernate:
+        ddl-auto: update
+      properties:
+        hibernate:
+          format_sql: 'true'
+          show_sql: 'false'
+server:
+  port: '8088'
